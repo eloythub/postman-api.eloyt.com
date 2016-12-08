@@ -1,0 +1,60 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Eloyt-api",
+		"_postman_id": "59c1cd1f-1e40-e05a-0d80-2478f1cfa16e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Stream",
+			"description": "",
+			"item": [
+				{
+					"name": "Upload Video",
+					"request": {
+						"url": "{{url}}/stream/upload/video",
+						"method": "POST",
+						"header": [
+							{
+								"key": "//Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"enabled": true,
+									"warning": "",
+									"src": "file.mp4"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "health-check",
+			"request": {
+				"url": "{{url}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
